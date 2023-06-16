@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA5E98492A3B8A9800849B73 /* pideloyaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E98482A3B8A9800849B73 /* pideloyaApp.swift */; };
+		EA5E984B2A3B8A9800849B73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E984A2A3B8A9800849B73 /* ContentView.swift */; };
+		EA5E984D2A3B8AA000849B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5E984C2A3B8AA000849B73 /* Assets.xcassets */; };
+		EA5E98502A3B8AA000849B73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5E984F2A3B8AA000849B73 /* Preview Assets.xcassets */; };
+		EA5E98522A3B8AA000849B73 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E98512A3B8AA000849B73 /* Persistence.swift */; };
+		EA5E98552A3B8AA000849B73 /* pideloya.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA5E98532A3B8AA000849B73 /* pideloya.xcdatamodeld */; };
+		EA5E985F2A3B8AA000849B73 /* pideloyaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E985E2A3B8AA000849B73 /* pideloyaTests.swift */; };
+		EA5E98692A3B8AA000849B73 /* pideloyaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E98682A3B8AA000849B73 /* pideloyaUITests.swift */; };
+		EA5E986B2A3B8AA100849B73 /* pideloyaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E986A2A3B8AA100849B73 /* pideloyaUITestsLaunchTests.swift */; };
+		EAF9DD9E2A3C1753005A0FD8 /* SearchHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9DD9D2A3C1753005A0FD8 /* SearchHomeView.swift */; };
+		EAF9DDA32A3C18A3005A0FD8 /* MLProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9DDA22A3C18A3005A0FD8 /* MLProduct.swift */; };
+		EAF9DDA52A3C18DB005A0FD8 /* MLSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9DDA42A3C18DB005A0FD8 /* MLSearchResponse.swift */; };
+		EAF9DDA82A3C1955005A0FD8 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9DDA72A3C1955005A0FD8 /* ApiProvider.swift */; };
+		EAF9DDAB2A3C19E1005A0FD8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EAF9DDAA2A3C19E1005A0FD8 /* Alamofire */; };
+		EAF9DDAE2A3C1AFF005A0FD8 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9DDAD2A3C1AFF005A0FD8 /* ChartView.swift */; };
+		EAF9DDB02A3C1CFA005A0FD8 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9DDAF2A3C1CFA005A0FD8 /* CustomBackButton.swift */; };
+		EAF9DDB22A3C1D97005A0FD8 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9DDB12A3C1D97005A0FD8 /* ProductListView.swift */; };
+		EAF9DDB42A3C1E67005A0FD8 /* ProductPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9DDB32A3C1E67005A0FD8 /* ProductPreview.swift */; };
+		EAF9DDB62A3C1F9F005A0FD8 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9DDB52A3C1F9F005A0FD8 /* ProductDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA5E985B2A3B8AA000849B73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA5E983D2A3B8A9800849B73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA5E98442A3B8A9800849B73;
+			remoteInfo = pideloya;
+		};
+		EA5E98652A3B8AA000849B73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA5E983D2A3B8A9800849B73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA5E98442A3B8A9800849B73;
+			remoteInfo = pideloya;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA5E98452A3B8A9800849B73 /* pideloya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pideloya.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5E98482A3B8A9800849B73 /* pideloyaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pideloyaApp.swift; sourceTree = "<group>"; };
+		EA5E984A2A3B8A9800849B73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA5E984C2A3B8AA000849B73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA5E984F2A3B8AA000849B73 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA5E98512A3B8AA000849B73 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		EA5E98542A3B8AA000849B73 /* pideloya.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pideloya.xcdatamodel; sourceTree = "<group>"; };
+		EA5E985A2A3B8AA000849B73 /* pideloyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pideloyaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5E985E2A3B8AA000849B73 /* pideloyaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pideloyaTests.swift; sourceTree = "<group>"; };
+		EA5E98642A3B8AA000849B73 /* pideloyaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pideloyaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5E98682A3B8AA000849B73 /* pideloyaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pideloyaUITests.swift; sourceTree = "<group>"; };
+		EA5E986A2A3B8AA100849B73 /* pideloyaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pideloyaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EAF9DD9D2A3C1753005A0FD8 /* SearchHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHomeView.swift; sourceTree = "<group>"; };
+		EAF9DDA22A3C18A3005A0FD8 /* MLProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLProduct.swift; sourceTree = "<group>"; };
+		EAF9DDA42A3C18DB005A0FD8 /* MLSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLSearchResponse.swift; sourceTree = "<group>"; };
+		EAF9DDA72A3C1955005A0FD8 /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
+		EAF9DDAD2A3C1AFF005A0FD8 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		EAF9DDAF2A3C1CFA005A0FD8 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
+		EAF9DDB12A3C1D97005A0FD8 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		EAF9DDB32A3C1E67005A0FD8 /* ProductPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPreview.swift; sourceTree = "<group>"; };
+		EAF9DDB52A3C1F9F005A0FD8 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA5E98422A3B8A9800849B73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAF9DDAB2A3C19E1005A0FD8 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5E98572A3B8AA000849B73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5E98612A3B8AA000849B73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA5E983C2A3B8A9800849B73 = {
+			isa = PBXGroup;
+			children = (
+				EA5E98472A3B8A9800849B73 /* pideloya */,
+				EA5E985D2A3B8AA000849B73 /* pideloyaTests */,
+				EA5E98672A3B8AA000849B73 /* pideloyaUITests */,
+				EA5E98462A3B8A9800849B73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA5E98462A3B8A9800849B73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA5E98452A3B8A9800849B73 /* pideloya.app */,
+				EA5E985A2A3B8AA000849B73 /* pideloyaTests.xctest */,
+				EA5E98642A3B8AA000849B73 /* pideloyaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA5E98472A3B8A9800849B73 /* pideloya */ = {
+			isa = PBXGroup;
+			children = (
+				EAF9DD9F2A3C1840005A0FD8 /* Model */,
+				EAF9DDA62A3C191D005A0FD8 /* Control */,
+				EAF9DD9C2A3C1709005A0FD8 /* Views */,
+				EA5E98482A3B8A9800849B73 /* pideloyaApp.swift */,
+				EA5E984A2A3B8A9800849B73 /* ContentView.swift */,
+				EA5E984C2A3B8AA000849B73 /* Assets.xcassets */,
+				EA5E98512A3B8AA000849B73 /* Persistence.swift */,
+				EA5E98532A3B8AA000849B73 /* pideloya.xcdatamodeld */,
+				EA5E984E2A3B8AA000849B73 /* Preview Content */,
+			);
+			path = pideloya;
+			sourceTree = "<group>";
+		};
+		EA5E984E2A3B8AA000849B73 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EA5E984F2A3B8AA000849B73 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EA5E985D2A3B8AA000849B73 /* pideloyaTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA5E985E2A3B8AA000849B73 /* pideloyaTests.swift */,
+			);
+			path = pideloyaTests;
+			sourceTree = "<group>";
+		};
+		EA5E98672A3B8AA000849B73 /* pideloyaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA5E98682A3B8AA000849B73 /* pideloyaUITests.swift */,
+				EA5E986A2A3B8AA100849B73 /* pideloyaUITestsLaunchTests.swift */,
+			);
+			path = pideloyaUITests;
+			sourceTree = "<group>";
+		};
+		EAF9DD9C2A3C1709005A0FD8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EAF9DDAC2A3C1ACA005A0FD8 /* commonView */,
+				EAF9DD9D2A3C1753005A0FD8 /* SearchHomeView.swift */,
+				EAF9DDB12A3C1D97005A0FD8 /* ProductListView.swift */,
+				EAF9DDB32A3C1E67005A0FD8 /* ProductPreview.swift */,
+				EAF9DDB52A3C1F9F005A0FD8 /* ProductDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EAF9DD9F2A3C1840005A0FD8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAF9DDA22A3C18A3005A0FD8 /* MLProduct.swift */,
+				EAF9DDA42A3C18DB005A0FD8 /* MLSearchResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EAF9DDA62A3C191D005A0FD8 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				EAF9DDA72A3C1955005A0FD8 /* ApiProvider.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		EAF9DDAC2A3C1ACA005A0FD8 /* commonView */ = {
+			isa = PBXGroup;
+			children = (
+				EAF9DDAD2A3C1AFF005A0FD8 /* ChartView.swift */,
+				EAF9DDAF2A3C1CFA005A0FD8 /* CustomBackButton.swift */,
+			);
+			path = commonView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA5E98442A3B8A9800849B73 /* pideloya */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5E986E2A3B8AA100849B73 /* Build configuration list for PBXNativeTarget "pideloya" */;
+			buildPhases = (
+				EA5E98412A3B8A9800849B73 /* Sources */,
+				EA5E98422A3B8A9800849B73 /* Frameworks */,
+				EA5E98432A3B8A9800849B73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pideloya;
+			packageProductDependencies = (
+				EAF9DDAA2A3C19E1005A0FD8 /* Alamofire */,
+			);
+			productName = pideloya;
+			productReference = EA5E98452A3B8A9800849B73 /* pideloya.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA5E98592A3B8AA000849B73 /* pideloyaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5E98712A3B8AA100849B73 /* Build configuration list for PBXNativeTarget "pideloyaTests" */;
+			buildPhases = (
+				EA5E98562A3B8AA000849B73 /* Sources */,
+				EA5E98572A3B8AA000849B73 /* Frameworks */,
+				EA5E98582A3B8AA000849B73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA5E985C2A3B8AA000849B73 /* PBXTargetDependency */,
+			);
+			name = pideloyaTests;
+			productName = pideloyaTests;
+			productReference = EA5E985A2A3B8AA000849B73 /* pideloyaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA5E98632A3B8AA000849B73 /* pideloyaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5E98742A3B8AA100849B73 /* Build configuration list for PBXNativeTarget "pideloyaUITests" */;
+			buildPhases = (
+				EA5E98602A3B8AA000849B73 /* Sources */,
+				EA5E98612A3B8AA000849B73 /* Frameworks */,
+				EA5E98622A3B8AA000849B73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA5E98662A3B8AA000849B73 /* PBXTargetDependency */,
+			);
+			name = pideloyaUITests;
+			productName = pideloyaUITests;
+			productReference = EA5E98642A3B8AA000849B73 /* pideloyaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA5E983D2A3B8A9800849B73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					EA5E98442A3B8A9800849B73 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					EA5E98592A3B8AA000849B73 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = EA5E98442A3B8A9800849B73;
+					};
+					EA5E98632A3B8AA000849B73 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = EA5E98442A3B8A9800849B73;
+					};
+				};
+			};
+			buildConfigurationList = EA5E98402A3B8A9800849B73 /* Build configuration list for PBXProject "pideloya" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA5E983C2A3B8A9800849B73;
+			packageReferences = (
+				EAF9DDA92A3C19E1005A0FD8 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = EA5E98462A3B8A9800849B73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA5E98442A3B8A9800849B73 /* pideloya */,
+				EA5E98592A3B8AA000849B73 /* pideloyaTests */,
+				EA5E98632A3B8AA000849B73 /* pideloyaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA5E98432A3B8A9800849B73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5E98502A3B8AA000849B73 /* Preview Assets.xcassets in Resources */,
+				EA5E984D2A3B8AA000849B73 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5E98582A3B8AA000849B73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5E98622A3B8AA000849B73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA5E98412A3B8A9800849B73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAF9DDB22A3C1D97005A0FD8 /* ProductListView.swift in Sources */,
+				EA5E98552A3B8AA000849B73 /* pideloya.xcdatamodeld in Sources */,
+				EAF9DDB42A3C1E67005A0FD8 /* ProductPreview.swift in Sources */,
+				EAF9DDB02A3C1CFA005A0FD8 /* CustomBackButton.swift in Sources */,
+				EAF9DDA82A3C1955005A0FD8 /* ApiProvider.swift in Sources */,
+				EA5E98522A3B8AA000849B73 /* Persistence.swift in Sources */,
+				EAF9DDA52A3C18DB005A0FD8 /* MLSearchResponse.swift in Sources */,
+				EAF9DD9E2A3C1753005A0FD8 /* SearchHomeView.swift in Sources */,
+				EAF9DDAE2A3C1AFF005A0FD8 /* ChartView.swift in Sources */,
+				EA5E984B2A3B8A9800849B73 /* ContentView.swift in Sources */,
+				EAF9DDB62A3C1F9F005A0FD8 /* ProductDetailView.swift in Sources */,
+				EAF9DDA32A3C18A3005A0FD8 /* MLProduct.swift in Sources */,
+				EA5E98492A3B8A9800849B73 /* pideloyaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5E98562A3B8AA000849B73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5E985F2A3B8AA000849B73 /* pideloyaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5E98602A3B8AA000849B73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5E986B2A3B8AA100849B73 /* pideloyaUITestsLaunchTests.swift in Sources */,
+				EA5E98692A3B8AA000849B73 /* pideloyaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA5E985C2A3B8AA000849B73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA5E98442A3B8A9800849B73 /* pideloya */;
+			targetProxy = EA5E985B2A3B8AA000849B73 /* PBXContainerItemProxy */;
+		};
+		EA5E98662A3B8AA000849B73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA5E98442A3B8A9800849B73 /* pideloya */;
+			targetProxy = EA5E98652A3B8AA000849B73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EA5E986C2A3B8AA100849B73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA5E986D2A3B8AA100849B73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA5E986F2A3B8AA100849B73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pideloya/Preview Content\"";
+				DEVELOPMENT_TEAM = 8463465GH5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gerardosj.pideloya;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA5E98702A3B8AA100849B73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pideloya/Preview Content\"";
+				DEVELOPMENT_TEAM = 8463465GH5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gerardosj.pideloya;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA5E98722A3B8AA100849B73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8463465GH5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gerardosj.pideloyaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pideloya.app/pideloya";
+			};
+			name = Debug;
+		};
+		EA5E98732A3B8AA100849B73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8463465GH5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gerardosj.pideloyaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pideloya.app/pideloya";
+			};
+			name = Release;
+		};
+		EA5E98752A3B8AA100849B73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8463465GH5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gerardosj.pideloyaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pideloya;
+			};
+			name = Debug;
+		};
+		EA5E98762A3B8AA100849B73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8463465GH5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gerardosj.pideloyaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pideloya;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA5E98402A3B8A9800849B73 /* Build configuration list for PBXProject "pideloya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5E986C2A3B8AA100849B73 /* Debug */,
+				EA5E986D2A3B8AA100849B73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA5E986E2A3B8AA100849B73 /* Build configuration list for PBXNativeTarget "pideloya" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5E986F2A3B8AA100849B73 /* Debug */,
+				EA5E98702A3B8AA100849B73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA5E98712A3B8AA100849B73 /* Build configuration list for PBXNativeTarget "pideloyaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5E98722A3B8AA100849B73 /* Debug */,
+				EA5E98732A3B8AA100849B73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA5E98742A3B8AA100849B73 /* Build configuration list for PBXNativeTarget "pideloyaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5E98752A3B8AA100849B73 /* Debug */,
+				EA5E98762A3B8AA100849B73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EAF9DDA92A3C19E1005A0FD8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EAF9DDAA2A3C19E1005A0FD8 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAF9DDA92A3C19E1005A0FD8 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		EA5E98532A3B8AA000849B73 /* pideloya.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA5E98542A3B8AA000849B73 /* pideloya.xcdatamodel */,
+			);
+			currentVersion = EA5E98542A3B8AA000849B73 /* pideloya.xcdatamodel */;
+			path = pideloya.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EA5E983D2A3B8A9800849B73 /* Project object */;
+}
