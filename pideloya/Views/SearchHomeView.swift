@@ -12,7 +12,7 @@ struct SearchHomeView: View {
     @State private var selectedIndex: Int = 1
     
     private let categories = ["Electronica", "Computo", "Telefonos","Videojuegos"]
-    
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -29,7 +29,7 @@ struct SearchHomeView: View {
                         
                         ScrollView (.horizontal, showsIndicators: false) {
                             HStack {
-                                ForEach(0 ..< categories.count) { i in
+                                ForEach(0 ..< categories.count,id:\.self) { i in
                                     Button(action: {selectedIndex = i}) {
                                         CategoryView(isActive: selectedIndex == i, text: categories[i])
                                     }
@@ -121,9 +121,6 @@ struct CategoryView: View {
         .padding(.trailing)
     }
 }
-
-
-
 
 
 

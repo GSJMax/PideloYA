@@ -7,10 +7,8 @@
 
 import Foundation
 
-/**
- 
- Genera un objeto
-*/
+
+/// Modelo Datos de producto MercadoLibre
 struct mlProduct: Decodable,Identifiable, Hashable {
     
     let id: String?
@@ -31,6 +29,8 @@ struct mlProduct: Decodable,Identifiable, Hashable {
         self.official_store_name = oficialStoreName
     }
     
+    /// Retorna URL de imagen en base al thumbail_id  de producto
+    /// - Returns: String Url Imagen compuesta ( https://http2.mlstatic.com/D_NQ_NP_\(thumbnail_id!)-V.jpg)
     func urlMeli() ->String{
         
         return "https://http2.mlstatic.com/D_NQ_NP_\(thumbnail_id!)-V.jpg"

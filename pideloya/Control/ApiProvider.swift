@@ -7,9 +7,8 @@
 
 import Foundation
 import Alamofire
-/**
- Class
- */
+
+/// Clase encargada de manejar las peticiones para API ML, Hereda de ObservableObject
 class MLApiService : ObservableObject {
     
     @Published var products: [mlProduct] = [mlProduct]()
@@ -21,6 +20,14 @@ class MLApiService : ObservableObject {
     
     
     @MainActor
+    /// Realiza una peticion a https://api.mercadolibre.com/sites/MLM/search?q=
+    /// agregando los datos de consulta del tipo "String%20String..."
+    ///  - Parameters:
+    ///    - strQuery: in UserInputString
+    ///    - sucess: out Sucess Data
+    ///    - failure: out Error Data
+    ///
+    ///
     func search(
         strQuery: String,
         sucess: @escaping (_ mls: mlSearchResult) -> (),
@@ -29,8 +36,7 @@ class MLApiService : ObservableObject {
         
         isSearching = true
         
-        let urlRequest = "\(ML_url)\(ML_site)/search?q=\(getSanitizedString(query: strQuery))"
-        //print(urlRequest)
+        let urlRequest = "\(ML_url)\(ML_site)/search?q=\(getSanitizedURLString(query: strQuery))"
         AF.request(urlRequest, method: .get).validate(statusCode: ML_StatusOK).responseDecodable(of: mlSearchResult.self){
             response in
             
@@ -45,7 +51,10 @@ class MLApiService : ObservableObject {
         isSearching = false
     }
     
-    func getSanitizedString(query: String)->String{
+    /// Sanitiza un objeto de tipo String y genera un nuevo string con el formato String%20String... para su uso en el API de ML
+    /// - Parameter query: String UserInput Eje: "String String %"
+    /// - Returns: retorna un objeto de tipo String Sanitizado  Eje: "String%20String"
+    func getSanitizedURLString(query: String)->String{
         let cleanString = query.replacingOccurrences(of: "%", with: "", options: .literal, range: nil)
         let sanitizedString = cleanString
             .trimmingCharacters(in: .whitespacesAndNewlines)

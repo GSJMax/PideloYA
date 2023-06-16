@@ -20,11 +20,11 @@ class MLApiServiceTest: XCTestCase {
         sut = nil
     }
 
-    func test_getSanitizedString()  {
+    func test_getSanitizedURLString()  {
         
         let userInputString = "test string %"
         let expectedSanitizedString = "test%20string"
-        let result = sut.getSanitizedString(query:userInputString)
+        let result = sut.getSanitizedURLString(query:userInputString)
         print(result)
         XCTAssertTrue(result == expectedSanitizedString)
 
