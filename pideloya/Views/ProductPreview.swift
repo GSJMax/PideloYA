@@ -77,7 +77,7 @@ struct ProductPreview: View {
 
 struct ProductPreview_Previews: PreviewProvider {
     static var previews: some View {
-        ProductPreview(productData: mlProduct(idProd: "ID", titleProd: "Libro Las Vicisitudes Del Contratenor En Mexico Nvo", priceProd: 1000, imgProd: "927362-MLA52990553670_122022", soldQuantity: 300, availableQuantity: 10),imageSize: 100)
+        ProductPreview(productData: mlProduct(idProd: "ID", titleProd: "Libro Las Vicisitudes Del Contratenor En Mexico Nvo", priceProd: 1000, imgProd: "927362-MLA52990553670_122022", soldQuantity: 300, availableQuantity: 10,oficialStoreName: "Gandhi"),imageSize: 100)
             .previewInterfaceOrientation(.portraitUpsideDown)
     }
 }

@@ -55,7 +55,7 @@ struct ProdListView: View {
             
             VStack {
                 Spacer()
-                ChartNavBarView(totChart: 0,hidden:!showBackButton)
+                ChartNavBarView(totChart: 0,isHidden :!showBackButton,isChart: true)
             }
             
             
@@ -64,7 +64,7 @@ struct ProdListView: View {
                 await mlApiService.search(
                     strQuery: searchString) { mls in
                         productList = mls.results
-                        print("Exito task")
+                        
                     } failure: { error in
                         print("Error task")
                     }

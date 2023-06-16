@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA30868D2A3C40E2008FD317 /* MLApiServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30868C2A3C40E2008FD317 /* MLApiServiceTest.swift */; };
 		EA5E98492A3B8A9800849B73 /* pideloyaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E98482A3B8A9800849B73 /* pideloyaApp.swift */; };
 		EA5E984B2A3B8A9800849B73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E984A2A3B8A9800849B73 /* ContentView.swift */; };
 		EA5E984D2A3B8AA000849B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5E984C2A3B8AA000849B73 /* Assets.xcassets */; };
 		EA5E98502A3B8AA000849B73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA5E984F2A3B8AA000849B73 /* Preview Assets.xcassets */; };
 		EA5E98522A3B8AA000849B73 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E98512A3B8AA000849B73 /* Persistence.swift */; };
 		EA5E98552A3B8AA000849B73 /* pideloya.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA5E98532A3B8AA000849B73 /* pideloya.xcdatamodeld */; };
-		EA5E985F2A3B8AA000849B73 /* pideloyaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E985E2A3B8AA000849B73 /* pideloyaTests.swift */; };
-		EA5E98692A3B8AA000849B73 /* pideloyaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E98682A3B8AA000849B73 /* pideloyaUITests.swift */; };
-		EA5E986B2A3B8AA100849B73 /* pideloyaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E986A2A3B8AA100849B73 /* pideloyaUITestsLaunchTests.swift */; };
+		EA5E98692A3B8AA000849B73 /* SearchAndScanViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5E98682A3B8AA000849B73 /* SearchAndScanViewTest.swift */; };
 		EAF9DD9E2A3C1753005A0FD8 /* SearchHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9DD9D2A3C1753005A0FD8 /* SearchHomeView.swift */; };
 		EAF9DDA32A3C18A3005A0FD8 /* MLProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9DDA22A3C18A3005A0FD8 /* MLProduct.swift */; };
 		EAF9DDA52A3C18DB005A0FD8 /* MLSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF9DDA42A3C18DB005A0FD8 /* MLSearchResponse.swift */; };
@@ -46,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA30868C2A3C40E2008FD317 /* MLApiServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLApiServiceTest.swift; sourceTree = "<group>"; };
 		EA5E98452A3B8A9800849B73 /* pideloya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pideloya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5E98482A3B8A9800849B73 /* pideloyaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pideloyaApp.swift; sourceTree = "<group>"; };
 		EA5E984A2A3B8A9800849B73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,10 +54,8 @@
 		EA5E98512A3B8AA000849B73 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		EA5E98542A3B8AA000849B73 /* pideloya.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pideloya.xcdatamodel; sourceTree = "<group>"; };
 		EA5E985A2A3B8AA000849B73 /* pideloyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pideloyaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA5E985E2A3B8AA000849B73 /* pideloyaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pideloyaTests.swift; sourceTree = "<group>"; };
 		EA5E98642A3B8AA000849B73 /* pideloyaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pideloyaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA5E98682A3B8AA000849B73 /* pideloyaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pideloyaUITests.swift; sourceTree = "<group>"; };
-		EA5E986A2A3B8AA100849B73 /* pideloyaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pideloyaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA5E98682A3B8AA000849B73 /* SearchAndScanViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAndScanViewTest.swift; sourceTree = "<group>"; };
 		EAF9DD9D2A3C1753005A0FD8 /* SearchHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHomeView.swift; sourceTree = "<group>"; };
 		EAF9DDA22A3C18A3005A0FD8 /* MLProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLProduct.swift; sourceTree = "<group>"; };
 		EAF9DDA42A3C18DB005A0FD8 /* MLSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLSearchResponse.swift; sourceTree = "<group>"; };
@@ -142,7 +140,7 @@
 		EA5E985D2A3B8AA000849B73 /* pideloyaTests */ = {
 			isa = PBXGroup;
 			children = (
-				EA5E985E2A3B8AA000849B73 /* pideloyaTests.swift */,
+				EA30868C2A3C40E2008FD317 /* MLApiServiceTest.swift */,
 			);
 			path = pideloyaTests;
 			sourceTree = "<group>";
@@ -150,8 +148,7 @@
 		EA5E98672A3B8AA000849B73 /* pideloyaUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EA5E98682A3B8AA000849B73 /* pideloyaUITests.swift */,
-				EA5E986A2A3B8AA100849B73 /* pideloyaUITestsLaunchTests.swift */,
+				EA5E98682A3B8AA000849B73 /* SearchAndScanViewTest.swift */,
 			);
 			path = pideloyaUITests;
 			sourceTree = "<group>";
@@ -350,7 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA5E985F2A3B8AA000849B73 /* pideloyaTests.swift in Sources */,
+				EA30868D2A3C40E2008FD317 /* MLApiServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,8 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA5E986B2A3B8AA100849B73 /* pideloyaUITestsLaunchTests.swift in Sources */,
-				EA5E98692A3B8AA000849B73 /* pideloyaUITests.swift in Sources */,
+				EA5E98692A3B8AA000849B73 /* SearchAndScanViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

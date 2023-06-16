@@ -11,9 +11,9 @@ import Alamofire
  Class
  */
 class MLApiService : ObservableObject {
-        
+    
     @Published var products: [mlProduct] = [mlProduct]()
-    @Published var isSearching: Bool = true  // <-- here
+    @Published var isSearching: Bool = true
     
     private let ML_site = "MLM"
     private let ML_url = "https://api.mercadolibre.com/sites/"
@@ -29,23 +29,29 @@ class MLApiService : ObservableObject {
         
         isSearching = true
         
-        let urlRequest = "\(ML_url)\(ML_site)/search?q=\(strQuery)"
-        print(urlRequest)
+        let urlRequest = "\(ML_url)\(ML_site)/search?q=\(getSanitizedString(query: strQuery))"
+        //print(urlRequest)
         AF.request(urlRequest, method: .get).validate(statusCode: ML_StatusOK).responseDecodable(of: mlSearchResult.self){
             response in
             
             if let result = response.value{
-                
-                print("Exito Net")
-                print(result)
                 self.products = result.results!
                 sucess(result)
             }else{
-                print("Error Net")
                 failure(response.error)
             }
         }
         
         isSearching = false
     }
+    
+    func getSanitizedString(query: String)->String{
+        let cleanString = query.replacingOccurrences(of: "%", with: "", options: .literal, range: nil)
+        let sanitizedString = cleanString
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+            .replacingOccurrences(of: " ", with: "%20", options: .literal, range: nil)
+        return sanitizedString
     }
+    
+    
+}

@@ -22,8 +22,6 @@ struct SearchHomeView: View {
                 ScrollView (showsIndicators: false) {
                     VStack (alignment: .leading) {
                         
-                        //AppBarView()
-                        
                         TitleView()
                             .padding(.bottom).frame(maxWidth: .infinity,  alignment: .center)
                         
@@ -51,7 +49,7 @@ struct SearchHomeView: View {
                 
                 VStack {
                     Spacer()
-                    ChartNavBarView(totChart: 0, hidden: false)
+                    ChartNavBarView(totChart: 0, isHidden: false, isChart: true)
                 }
             }
         }
@@ -64,14 +62,13 @@ struct TitleView: View {
     
     var body: some View {
         Text("Pidelo")
-            .font(.custom("PlayfairDisplay-Regular", size: 30))
-            .foregroundColor(Color(.red))
-            
+            .font(.title2)
+            .foregroundColor(Color("Color-Red"))
             +
         Text("Ya!")
-            .font(.custom("PlayfairDisplay-Bold", size: 36))
+            .font(.title)
             .fontWeight(.bold)
-            .foregroundColor(Color(.red))
+            .foregroundColor(Color("Color-Red"))
     }
     
     
@@ -82,7 +79,7 @@ struct SearchAndScanView: View {
     var body: some View {
         HStack {
             HStack {
-                TextField("Buscalo Ya!", text: $search)
+                TextField("Buscalo Ya!", text: $search).accessibilityIdentifier("searchTextField")
             }
             .padding(.all, 20)
             .background(Color.white)
@@ -96,9 +93,11 @@ struct SearchAndScanView: View {
                     Image(systemName: "magnifyingglass")
                         .padding()
                         .foregroundColor(.white)
-                        .background(Color(.red))
+                        .background(Color("Color-Red"))
                         .cornerRadius(10.0)
                 })
+            .accessibilityIdentifier("searchButton")
+            .disabled(search.isEmpty)
 
         }
         .padding(.horizontal)
@@ -113,8 +112,8 @@ struct CategoryView: View {
             Text(text)
                 .font(.system(size: 18))
                 .fontWeight(.medium)
-                .foregroundColor(isActive ? Color("Primary") : Color.black.opacity(0.5))
-            if (isActive) { Color("Primary")
+                .foregroundColor(isActive ? Color("Color-Red") : Color.black.opacity(0.5))
+            if (isActive) { Color("Color-Red")
                 .frame(width: 15, height: 2)
                 .clipShape(Capsule())
             }
