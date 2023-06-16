@@ -19,7 +19,6 @@ class SearchAndScanViewTest: XCTestCase {
 
     func test_SearchAndScanView() throws {
         
-        
         let app = XCUIApplication()
         app.launchArguments = ["isRunningUITests"]
         app.launch()
@@ -31,19 +30,12 @@ class SearchAndScanViewTest: XCTestCase {
         searchButton.tap()
         
         let userInputSearch = app.textFields["searchTextField"]
-        
-        
         XCTAssertTrue(userInputSearch.waitForExistence(timeout: timeout))
         XCTAssertFalse(searchButton.isEnabled)
         
         userInputSearch.tap()
         userInputSearch.typeText("Laptop Lenovo")
-        
-        
-        
         XCTAssertTrue(searchButton.isEnabled)
         
     }
-
-
 }

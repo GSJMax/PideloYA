@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+/// View: Genera Layout con la vista previa de un producto (Imagen,Descripcion,Precio)
 struct ProductPreview: View {
     
     let productData: mlProduct

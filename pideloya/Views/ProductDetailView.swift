@@ -28,19 +28,19 @@ struct ProductDetailView: View {
                 AsyncImage(url: URL(string: productData.urlMeli())) {
                     image in
                     image.resizable()
-                        .aspectRatio(1,contentMode: .fit)
+                        .aspectRatio(1,contentMode: .fill)
                         .edgesIgnoringSafeArea(.top)
                     
                     
                 } placeholder: {
                     ProgressView()
                 }
-                .frame(width: 300, height: 300)
+                .frame(width: 250, height: 300)
                 
                 
                 VStack (alignment: .leading) {
 
-                    Text(productData.title!)
+                    Text(productData.title ?? "")
                         .font(.title3)
                         .fontWeight(.bold)
                         .lineLimit(2)
@@ -50,7 +50,7 @@ struct ProductDetailView: View {
                             Image("star")
                         }
                         
-                        Text("("+String(productData.sold_quantity!)+")Vendidos")
+                        Text("("+String(productData.sold_quantity ?? 0)+")Vendidos")
                             .font(.subheadline)
                             .foregroundColor(.gray)
                         Spacer()
@@ -86,7 +86,7 @@ struct ProductDetailView: View {
                             }
                             
                             Spacer()
-                            Text("("+String(productData.available_quantity!)+")Disponibles").font(.system(size: 16))
+                            Text("("+String(productData.available_quantity ?? 0)+")Disponibles").font(.system(size: 16))
                                 .font(.subheadline)
                                 .foregroundColor(.gray)
                             
@@ -94,7 +94,7 @@ struct ProductDetailView: View {
                         
                         Spacer()
                         
-                        Text(productData.price!.formatted(.currency(code: "USD")))
+                        Text((productData.price ?? 0.0).formatted(.currency(code: "USD")))
                             .font(.title)
                             .fontWeight(.bold)
                         
@@ -107,7 +107,9 @@ struct ProductDetailView: View {
                             Text("Vendedor")
                                 .font(.system(size: 16))
                                 .fontWeight(.semibold)
-                            Text(productData.official_store_name!)
+                            Text(
+                                productData.official_store_name ?? ""
+                            )
                                 .opacity(0.6)
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -132,7 +134,7 @@ struct ProductDetailView: View {
                                 .font(.system(size: 16))
                                 .fontWeight(.semibold)
                             
-                            Text(productData.title!)
+                            Text(productData.title ?? "")
                                 .opacity(0.6)
                             
                         }.frame(maxWidth: .infinity, alignment: .leading)
@@ -154,6 +156,9 @@ struct ProductDetailView: View {
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: CustomBackButton(hidden:false,action: {presentationMode.wrappedValue.dismiss()}))
     }
+    
+    
+
 }
 
 

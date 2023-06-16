@@ -57,6 +57,7 @@ struct SearchHomeView: View {
     }
 }
 
+/// View: Genera Layout con el titulo de la panta principal PideloYa!
 struct TitleView: View {
     
     
@@ -74,6 +75,7 @@ struct TitleView: View {
     
 }
 
+/// View: Genera Layout con los componentes de busqueda TextField y SearchButton
 struct SearchAndScanView: View {
     @Binding var search: String
     var body: some View {
@@ -104,6 +106,8 @@ struct SearchAndScanView: View {
     }
 }
 
+
+/// Muestra la barra de navegacion con las categorias de producto (Actualmente sin funcionalidad)
 struct CategoryView: View {
     let isActive: Bool
     let text: String

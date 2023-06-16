@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+/// View: Muestra ScrollView Layout con lista de productos resutado de la consulta en  https://api.mercadolibre.com/sites/MLM/search?q=
 struct ProdListView: View {
     
     let title: String
@@ -24,7 +26,13 @@ struct ProdListView: View {
                 if (mlApiService.isSearching) {
                     ProgressView("Obteniendo...")
                 }
-                else {
+            else if (mlApiService.isError){
+                VStack{
+                    Image("chemsError").scaledToFill()
+                    Text("Upps parece que no tenemos conexion..")
+                }.padding()
+            }
+             else{
 
                     ScrollView (.vertical,
                                 showsIndicators: true) {
@@ -66,7 +74,7 @@ struct ProdListView: View {
                         productList = mls.results
                         
                     } failure: { error in
-                        print("Error task")
+                        
                     }
             }
         .navigationBarBackButtonHidden(true)

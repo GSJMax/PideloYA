@@ -13,6 +13,7 @@ class MLApiService : ObservableObject {
     
     @Published var products: [mlProduct] = [mlProduct]()
     @Published var isSearching: Bool = true
+    @Published var isError: Bool = false
     
     private let ML_site = "MLM"
     private let ML_url = "https://api.mercadolibre.com/sites/"
@@ -44,6 +45,7 @@ class MLApiService : ObservableObject {
                 self.products = result.results!
                 sucess(result)
             }else{
+                self.isError = true
                 failure(response.error)
             }
         }

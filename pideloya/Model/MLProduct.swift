@@ -19,6 +19,7 @@ struct mlProduct: Decodable,Identifiable, Hashable {
     let available_quantity: Int?
     let official_store_name: String?
     
+    
     init(idProd: String, titleProd: String? = nil, priceProd: Double? = nil,imgProd: String?, soldQuantity:  Int?, availableQuantity: Int?, oficialStoreName: String?) {
         self.id = idProd
         self.title = titleProd
